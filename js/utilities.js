@@ -1,4 +1,5 @@
 function displayArea(shapename,Arearesult){
+    
 
     const tr =document.createElement("tr");
     tr.innerHTML= `
@@ -43,7 +44,7 @@ function randomColor() {
   } 
   
   document.addEventListener("mouseover", function(){
-    document.div.style.backgroundColor = randomColor();
+    document.body.style.backgroundColor = randomColor();
   });
   
 //   document.querySelector('circle').addEventListener('mouseover', event => {
