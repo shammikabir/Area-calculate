@@ -27,7 +27,7 @@
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/triangle.png" alt="">
                     <div class="text-center">
-                      <p class="mt-4 font-bold text-xl ">Triangle</p>
+                      <p class="mt-4 font-bold text-xl "> <span id="shape">Triangle</span></p>
                       <p>Area (A)= 0.5 * <span id="calculate-base">b</span>* <span id="calculate-height">h</span></p>
                        <div class="flex gap-3">
                          <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
@@ -45,41 +45,57 @@
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/rectangle.png" alt="">
                     <div class="text-center mt-10">
-                      <p class="mt-4 font-bold text-xl ">Rectangle</p>
-                      <p>Area (A)= 0.5 * <span>b * h</span> </p>
+                      <p class="mt-4 font-bold text-xl" id="shape-rectangle">Rectangle</p>
+                      <p>Area (A)=<span id="calculate-width">w</span>* <span id="calculate-length">l</span> </p>
                        <div class="flex gap-3">
-                         <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
+                         <input type="text" placeholder="w" id="w" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
                          <span class=" mt-5">cm</span>
-                          <input type="text" placeholder="h" id="h" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
+                          <input type="text" placeholder="l" id="l" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
                           <span class="mt-5">cm</span>
                         </div>
                     </div>
                     
                
                   
-                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6">Calculate</button>
+                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6" id="calculate-rectangle">Calculate</button>
                 </div>
+                 <!-- parallelogram -->
 
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/parallelogram.png" alt="">
                     <div class="text-center mt-14">
                       <p class="mt-4 font-bold text-xl ">Parallelogram</p>
-                      <p>Area (A)= 0.5 * <span>b * h</span> </p>
+                      <p>Area (A)=<span id="calculate-b">b</span>*<span id="calculate-h">h</span></p>
                        <div class="flex gap-3">
-                         <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
+                         <input type="text" placeholder="b" id="getvaluebase" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
                          <span class=" mt-5">cm</span>
-                          <input type="text" placeholder="h" id="h" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
+                          <input type="text" placeholder="h" id="getvalueheight" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
                           <span class="mt-5">cm</span>
                         </div>
                     </div>
                     
                
                   
-                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6">Calculate</button>
+                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6" id="calculate-parallelogram">Calculate</button>
                 </div>
-
+                 <!-- Area Calculation section -->
                 <div class="bg-white-400 rounded-lg p-5 bg-white  shadow-md      mt-3 h-96">
                     <h2 class="font-bold text-center underline underline-offset-8 text-lg">Area Calculation</h2>
+                    <br>
+                    <table class="table-auto w-full  " >
+                     <!-- <thead>
+                        <tr>
+                           <th>No</th>
+                           <th>Shape</th>
+                           <th>Area</th>
+                        </tr>
+                     </thead> -->
+                     <tbody id="container">
+                         
+                     </tbody>
+                    </table>
+                   
+                    
                
                 </div>
             
@@ -152,8 +168,11 @@
         
 
     </main>
+    <script src="js/utilities.js"></script>
     
  <script src="js/calculation.js"></script>
+ <script src="js/Rectangle.js"></script>
+ <script src="js/parallelogram.js"></script>
 
     
 </body>

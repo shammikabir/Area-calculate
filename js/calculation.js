@@ -3,25 +3,30 @@ document.getElementById('blog-btn').addEventListener('click',function(){
      console.log("button");
 
 })
+let count=0;
+const unit="cm^2";
 document.getElementById('calculate-triangle').addEventListener('click',function(){
      const base=document.getElementById("b").value;
      const height=document.getElementById("h").value;
-    //  console.log(height,base);
-
-    // console.log("button");
+     count+=1;
 
     const areabasecalculate=document.getElementById('calculate-base');
     const areaheightcalculate=document.getElementById('calculate-height');
-    const areabaseset=areabasecalculate.innerText;
-    const areaheightset=areaheightcalculate.innerText;
-    // const areastring=parseFloat(areaset);
-    areaheightcalculate.innerText=height;
-    areabasecalculate.innerText=base;
-    // console.log(areaset);
+    setTextElementById('calculate-height',height);
+    setTextElementById('calculate-base',base);
     const result= 0.5*base*height;
-    console.log(result);
+
+//     display the calculate area
+    const shapename=document.getElementById('shape');
+    const getshapename=shapename.innerText;
+
+//     call the function to display the area
+    displayArea(getshapename,result);
 
 
+});
 
-})
+// 
+
+
 
