@@ -21,15 +21,31 @@ function displayArea(shapename,Arearesult){
    
  }
 
- function getRandomColor(){
-    var letters="0123456789ABCDEF";
-    var color ="#";
+//  function getRandomColor(){
+//     var letters="0123456789ABCDEF";
+//     var color ="#";
 
-    for(var i=0;i<6;i++){
-        color+=letters[Math.floor(Math.random()*16)];
+//     for(var i=0;i<6;i++){
+//         color+=letters[Math.floor(Math.random()*16)];
 
+//     }
+//     return color;
+//  }
+
+//  document.section.style.background=getRandomColor();
+
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
     }
-    return color;
- }
-
- document.section.style.background=getRandomColor();
+    return 'rgb(' + color.join(', ') + ')';
+  } 
+  
+  document.addEventListener("mouseover", function(){
+    document.div.style.backgroundColor = randomColor();
+  });
+  
+//   document.querySelector('circle').addEventListener('mouseover', event => {
+//         event.target.style.fill = randomColor();
+//   });
