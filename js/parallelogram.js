@@ -11,7 +11,7 @@ document.getElementById('calculate-parallelogram').addEventListener('click',func
    const result=getbase*getheight;
 
 //     display the calculate area
-   const shapename=document.getElementById('shape');
+   const shapename=document.getElementById('shape-parallelogram');
    const getshapename=shapename.innerText;
 
 //     call the function to display the area

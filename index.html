@@ -64,7 +64,7 @@
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/parallelogram.png" alt="">
                     <div class="text-center mt-14">
-                      <p class="mt-4 font-bold text-xl ">Parallelogram</p>
+                      <p class="mt-4 font-bold text-xl " id="shape-parallelogram">Parallelogram</p>
                       <p>Area (A)=<span id="calculate-b">b</span>*<span id="calculate-h">h</span></p>
                        <div class="flex gap-3">
                          <input type="text" placeholder="b" id="getvaluebase" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
@@ -106,60 +106,65 @@
                 
            
         </section>
+
+         <!-- Rhombus section  -->
         <section>
             <div class="grid grid-cols-4 gap-4 w-11/12 mx-auto  ">
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/rhombus.png" alt="">
                     <div class="text-center">
-                      <p class="mt-4 font-bold text-xl ">Rhombus</p>
-                      <p>Area (A)= 0.5 * <span>b * h</span> </p>
+                      <p class="mt-4 font-bold text-xl " id="shape-Rhombus">Rhombus</p>
+                      <p>Area (A)= 0.5 * <span id="calculate-d1">d1</span>*<span id="calculate-d2">d2</span> </p>
                        <div class="flex gap-3">
-                         <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
+                         <input type="text" placeholder="d1" id="getd1" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
                          <span class=" mt-5">cm</span>
-                          <input type="text" placeholder="h" id="h" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
+                          <input type="text" placeholder="d2" id="getd2" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
                           <span class="mt-5">cm</span>
                         </div>
                     </div>
                     
                
                   
-                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6">Calculate</button>
+                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6" id="calculate-Rhombus">Calculate</button>
                 </div>
-
+                   <!-- Pentagon section -->
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/pentagon.png" alt="">
                     <div class="text-center mt-6 ">
-                      <p class="mt-4 font-bold text-xl ">Pentagon</p>
-                      <p>Area (A)= 0.5 * <span>b * h</span> </p>
+                      <p class="mt-4 font-bold text-xl " id="shape-pentagon">Pentagon</p>
+                      <p>Area (A)= 0.5*<span id="calculateofp">p</span>*
+                        <span id="calculateofb">b</span></p>
                        <div class="flex gap-3">
-                         <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
+                         <input type="text" placeholder="p" id="getvalueofp" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
                          <span class=" mt-5">cm</span>
-                          <input type="text" placeholder="h" id="h" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
+                          <input type="text" placeholder="b" id="getvalueofb" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
                           <span class="mt-5">cm</span>
                         </div>
                     </div>
                     
                
                   
-                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6">Calculate</button>
+                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6" id="calculate-pentagon">Calculate</button>
                 </div>
-
+                 
+                <!-- Ellipse section -->
                 <div class="bg-white-400 rounded-lg p-8 bg-white  shadow-md      mt-3">
                     <img src="./images/ellipse.png" alt="">
                     <div class="text-center mt-10">
-                      <p class="mt-4 font-bold text-xl ">Ellipse</p>
-                      <p>Area (A)= 0.5 * <span>b * h</span> </p>
+                      <p class="mt-4 font-bold text-xl " id="shape-ellipse">Ellipse</p>
+                      <p>Area (A)=3.14*<span id="cvalueofa">a</span>*
+                        <span id="cvalueofb">b</span> </p>
                        <div class="flex gap-3">
-                         <input type="text" placeholder="b" id="b" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
+                         <input type="text" placeholder="a" id="getvaluea" class="mt-5   w-24  px-3 mb-2 bg-stone-200 text-black">
                          <span class=" mt-5">cm</span>
-                          <input type="text" placeholder="h" id="h" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
+                          <input type="text" placeholder="b" id="getvalueb" class="mt-5 w-24 px-3 mb-2 bg-stone-200 text-black">
                           <span class="mt-5">cm</span>
                         </div>
                     </div>
                     
                
                   
-                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6">Calculate</button>
+                  <button class="bg-sky-500 px-8 py-2 text-white font-medium hover:bg-sky-700 rounded-lg mt-5 mr-4 w-5/6" id="calculate-ellipse">Calculate</button>
                 </div>
             
             </div>
@@ -173,6 +178,9 @@
  <script src="js/calculation.js"></script>
  <script src="js/Rectangle.js"></script>
  <script src="js/parallelogram.js"></script>
+ <script src="js/Rhombus.js"></script>
+ <script src="js/Pantagon.js"></script>
+ <script src="js/Elliipse.js"></script>
 
     
 </body>
