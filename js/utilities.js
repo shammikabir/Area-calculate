@@ -43,10 +43,4 @@ function randomColor() {
     return 'rgb(' + color.join(', ') + ')';
   } 
   
-  document.addEventListener("mouseover", function(){
-    document.body.style.backgroundColor = randomColor();
-  });
   
-//   document.querySelector('circle').addEventListener('mouseover', event => {
-//         event.target.style.fill = randomColor();
-//   });
